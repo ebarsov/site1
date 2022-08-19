@@ -1,0 +1,811 @@
+/* Styles for my First (Self) Website 
+Name: First (self) Theme
+Author: Elena Barsov
+Date: August 2022
+*/
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body {
+    /* background:beige; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+}
+
+header {
+     background:#fff;
+    /* height: 200px; */
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #888;
+}
+
+#top {
+    /* height:60px; */
+    padding: 10px 30px 10px 10px;
+    background:orange;
+    overflow:hidden;
+}
+
+#inner-header {
+    max-width:1200px;
+    margin:0 auto;
+    /* height:100px; */
+    /* background:beige; */
+    padding: 10px 20px 10px 0;
+    clear:both;
+}
+
+.inner-footer {
+    max-width:1200px;
+    margin:0 auto;
+    /* height:100px; */
+    /* background:tan; */
+    padding: 10px 0;
+    clear:both;
+}
+
+.inner-footer .third {
+    text-align:center;
+}
+
+.inner-footer ul {
+    height: 60px;
+    line-height: 60px;
+    font-size: .875em;
+    color: grey;
+    list-style-type:none;
+}
+
+.inner-footer a {
+    color: grey;
+}
+
+.inner-footer li {
+    float:left;
+    margin-right: 25px;
+}
+
+.inner-specials {
+    margin-top: 20px;
+    background:#fff;
+    padding:3%;
+    border-radius: 3px;
+    border: 2px solid brown;
+}
+
+.inner-buy {
+    clear: both;
+    background: #ddd;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: brown solid 2px;
+    margin-bottom: 20px;
+}
+
+.row {
+    overflow:hidden;
+    margin-bottom: 20px;
+}
+
+.third {
+    width:31.91%;
+    float:left;
+    margin-right:2.12%;
+    padding:0 1%;
+}
+
+.third img {
+    margin-bottom: 15px;
+}
+
+#wrapper .third {
+    padding:0;
+}
+
+.third:last-of-type {
+    margin-right:0;
+}
+
+#hero {
+    /* height:400px;*/
+    background:lavenderblush;
+}
+
+.home #hero {
+    background-image:url(http://mystudywp.com/it270/final/wp-content/uploads/header-home.jpg);
+
+background-attachment:fixed;
+background-size:100%;
+background-position:0 110px;
+min-height:550px;
+max-width:100%;
+background-repeat:no-repeat;
+}
+
+#hero img {
+    display:none;
+}
+
+.inner-page #hero {
+    background-image:url(http://mystudywp.com/it270/final/wp-content/uploads/header-home.jpg);
+
+background-attachment:fixed;
+background-size:100%;
+background-position:0 110px;
+min-height:370px;
+max-width:100%;
+background-repeat:no-repeat;
+}
+
+
+
+#wrapper {
+    max-width:1200px;
+    margin:20px auto 40px auto;
+}
+
+.error404 #wrapper,
+.search #wrapper {
+    margin: 140px auto 0 auto;
+
+}
+
+main {
+    width:62%;
+    float:left;
+}
+
+aside {
+    float:right;
+    width:35%;
+    /* height:400px; */
+   /* background:rgb(248, 248, 244); */
+}
+
+footer {
+    background:#ccc;
+    /* height:300px; */
+    padding-top: 20px;
+    clear:both;
+}
+
+.nav-button {
+    display:none;
+}
+
+#site-navigation {
+    float:right;
+    margin-top:20px;
+    
+}
+
+#site-navigation li {
+    float:left;
+    list-style-type:none;
+    margin-left: 15px;
+    position:relative;
+   
+}
+
+
+#site-navigation li a {
+    text-decoration:none;
+    /* padding-bottom:5px; */
+}
+
+.sub-menu {
+    display:none;
+}
+
+#site-navigation li:hover .sub-menu {
+    display:block;
+    position:absolute;
+    background:#f9f1f1;
+    padding:5px;
+    /* top:24px;*/
+    width:180px; 
+}
+
+#site-navigation li:hover .sub-menu li {
+    margin-left:0;
+    float: none;
+    line-height: 1.4;
+}
+
+
+/* clsses, and ids */
+
+.thumbnail {
+    margin-bottom:15px;
+}
+
+.not-thumbnail img {
+    width:500px;
+    height:100%;
+    margin-bottom:15px;
+}
+
+.screen-reader-text {
+    display:none;
+}
+
+ #top #searchform {
+    float:right;
+    margin-top: 30px;
+    right: 10px;
+    z-index: 1000;
+    /* height: 30px;*/
+} 
+
+.post, .posts {
+    margin-bottom:25px;
+}
+
+.meta {
+    margin-bottom:10px;
+}
+
+.block {
+    display:block;
+    font-style:italic;
+}
+
+.search .pagetitle {
+    margin-bottom:10px;
+}
+
+.searching-box {
+    width: 62%;
+    float:left;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+main .attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .blog main
+  .attachment-post-thumbnail.size-post-thumbnail.wp-post-image,
+  .category main
+  .attachment-post-thumbnail.size-post-thumbnail.wp-post-image,
+  .search main
+  .attachment-post-thumbnail.size-post-thumbnail.wp-post-image ,
+  .archive main
+  .attachment-post-thumbnail.size-post-thumbnail.wp-post-image  {
+    width: auto;
+    height: auto;
+    margin-bottom: 0px;
+  }
+
+  main ul {
+      margin-bottom: 10px;
+  }
+
+
+
+
+/* typography */
+
+.home h1 {
+    font-size:3em;
+    text-align: center;
+    margin-bottom:14px;
+    color: crimson;
+}
+
+.third span a {
+    display: block;
+    color: brown;
+    font-style:italic;
+    margin-top:5px; 
+    font-size:1.1em;
+}
+
+.row p {
+    font-size: .92em;
+}
+
+.third h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: brown;
+}
+
+.inner-widgets h3 {
+    background:rgb(221, 176, 117);
+    font-size: 1.4em;
+    padding:3%;
+    color: #fff;
+    margin-bottom:10px;
+}
+
+.inner-food h3 {
+    font-size: 1.4em;
+    color: brown;
+}
+
+.inner-food {
+    background: #eee;
+    padding: 3%;
+}
+
+.inner-food p {
+    margin-bottom: 0;
+}
+
+aside ul {
+    margin-left:5%;
+    margin-bottom:15px;
+    list-style-type:none;
+}
+
+aside li a {
+    color:#666
+}
+
+.blog aside li,
+.category aside li,
+.search aside li,
+.archive aside li,
+.post-template-default aside li  {
+    margin-bottom: 5px;
+}
+
+.blog aside ul,
+.category aside ul,
+.search aside ul,
+.archive aside ul,
+.post-template-default aside ul  {
+    margin-bottom:25px;
+}
+
+
+footer h2 {
+    text-align: center;
+    font-size: 2.4em;
+    margin-bottom: 11px;
+}
+
+img + p {
+    margin: 15px 0 20px 0;
+}
+
+
+
+p {
+    margin-bottom:20px;
+    line-height: 1.4;
+}
+
+p + .block {
+    margin:-10px 0 10px 0;
+}
+
+.title {
+    font-size:2em;
+    margin-bottom: 10px;
+}
+
+.title a {
+    color: brown;
+}
+
+.meta span {
+    display:block;
+    font-style:italic;
+}
+
+h1, h3 {
+    font-family: playfair, serif;
+    color: crimson;
+}
+
+a {
+    color:chocolate;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: firebrick;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-weight: 200;
+}
+
+.contact h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+a {
+    color:chocolate
+}
+
+.home h2 {
+    text-align: center;
+    font-size: 2.4em;
+}
+
+
+/* comment form css */
+
+#commentform {
+    border:1px solid tan;
+    padding:10px;
+    margin:10px 0 20px 0;
+}
+
+.comment-notes {
+    font-size:.9em;
+    font-style:italic;
+    color:#666;
+    margin-bottom:6px;
+}
+
+label {
+    display:block;
+}
+.comment-form-cookies-consent label {
+    display:inline;
+}
+
+.comment-form p {
+    margin-bottom:10px;
+}
+
+.commentlist {
+    margin:10px 0 15px 30px;
+}
+
+/* formiddable form css */
+.frm_form_title {
+    font-size: 1.8em !important;
+    background: none !important;
+    padding:0 !important;
+    color:firebrick !important;
+}
+
+.with_frm_style legend + h3, .with_frm_style h3.frm_form_title {
+    margin-bottom: 10px !important;
+}
+
+.frm_button_submit {
+    background: burlywood !important;
+    border-color: burlywood !important;
+}
+
+/* contact form */
+
+.frm_fields_container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.frm_form_title {
+    font-size: 1.8em !important;
+    background: none !important;
+    padding: 0 !important;
+    color: brown !important;
+}
+
+.contact .frm_form_title  {
+    text-align: center !important;
+}
+
+
+
+/* the beginning of my media queries */
+
+@media only screen and (max-width: 1450px) {
+
+    #inner-header {
+        
+       padding: 10px 25px 10px 25px;
+     
+    }
+
+
+    #wrapper {
+        max-width:1200px;
+        margin: 25px;
+    }
+
+
+
+.home #hero {
+    background-image: none;
+    margin-top: 100px;
+    min-height: auto;
+}
+
+.inner-page #hero {
+    background-image: none;
+    margin-top: 100px;
+    min-height: auto;
+}
+
+#hero img {
+    display:block;
+}
+}
+
+@media only screen and (max-width: 900px) {
+
+    .third {
+        width: auto;
+        float: none;
+        margin-right: 0;
+        padding: 0 1%;
+        text-align: center;
+    }
+
+    .third img {
+        margin: 0 auto 15px auto;
+        display: block;
+    }
+
+    main {
+        width: 60%;
+    }
+
+    aside {
+        width: 73%;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+/* +++++ Add additional style +++++ */
+
+    header {
+        padding-top: 35px;
+    }
+
+    #top {
+        background: #fff;
+    }
+
+    body {
+        font-size: 93%;
+    }
+
+    .home #hero {
+        margin-top: 90px;
+    }
+
+    #logo {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .inner-page #hero img {
+        display: none;
+    }
+
+    main {
+        float: none;
+        width: auto;
+    }
+
+    aside {
+        float: none;
+        width: auto;
+    }
+
+    #wrapper {
+        margin: 13px;
+    }
+
+    .search #wrapper {
+        margin: 120px 13px 20px 13px;
+    }
+
+    #top #searchform {
+        float: none;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 1000;
+        height: 30px;
+    }
+
+    h1, h2, h3 {
+        line-height: 1.1;
+    }
+
+    .home h1 {
+        font-size: 2.2em;
+    }
+
+    .home h2 {
+        font-size: 1.8em;
+    }
+    h1 {
+        font-size: 2.2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    h3 {
+        font-size: 1.6em;
+    }
+
+    .blog main,
+    .search main,
+    .archive main {
+        text-align: center;
+    }
+
+    .inner-footer ul {
+        height: auto;
+        line-height: inherit;
+    }
+
+    .inner-footer a {
+        color: #999;
+    }
+
+    .inner-footer li {
+        float: none;
+        margin-right: 0;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+	/* Navigation Button
+	-------------------------------------------------------- */
+
+	.nav-button {
+		display: block;
+		position: absolute;
+		top: 7px;
+		left: 7px;
+		width: 50px;
+		height: 35px;
+		background: url('images-final/menu-icon-large.png'), linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.2));
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 21px, 100%;
+		cursor: pointer;
+		border: 0 none;
+		border-bottom: 1px solid rgba(255,255,255,.1);
+		box-shadow: 0 0 4px rgba(0,0,0,.7) inset;
+		border-radius: 5px;
+		z-index: 999;
+		text-indent: -9999px;
+	}
+	.nav-button:hover {
+		background-color: rgba(0,0,0,.1);
+	}
+	.nav-button.open {
+		background: url('images-final/close-icon-large.png'), linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.2));
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 21px, 100%;
+	}
+
+	/* Navigation Bar
+	-------------------------------------------------------- */
+
+	body { padding-top: 50px; }
+
+	.primary-nav {
+		width: 100%;
+		float: none;
+		background-color: palevioletred; /* change the menu color */
+		background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.2));
+		display: block;
+		height: 50px;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		box-shadow: 0 1px 2px rgba(0,0,0,.6);
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		z-index: 998;
+		clear: both;
+	}
+	.primary-nav li {
+		display: none;
+		width: 100%;
+		font-family: Arial;
+	}
+    /* my navigational styles */
+
+
+    #site-navigation li {
+        float:none;
+        margin-left:0;
+    }
+
+    #site-navigation li:hover .sub-menu {
+        position:static;
+        background:none;
+        padding:0px;
+        width:auto;
+    }
+/* end my navig styles */
+
+
+    .primary-nav li a {
+		display: block;
+		width: 100%;
+		padding: 10px 5%;
+		font-size: 14px;
+		font-weight: bold;
+		text-shadow: -1px -1px 0 rgba(0,0,0,.15);
+		color: white;
+		text-decoration: none;
+		border-bottom: 1px solid rgba(0,0,0,.2);
+		border-top: 1px solid rgba(255,255,255,.1);
+	}
+	.primary-nav li a:hover {
+		background-color: rgba(0,0,0,.5);
+		border-top-color: transparent;
+	}
+	.primary-nav > li:first-child {
+		border-top: 1px solid rgba(0,0,0,.2);
+	}
+
+	/* Toggle the navigation bar open  */
+
+	.primary-nav.open {
+		height: auto;
+		padding-top: 50px;
+	}
+	.primary-nav.open li {
+		display: block;
+	}
+
+	/* Submenus – optional .parent class indicates dropdowns */
+
+	.primary-nav > li:hover > a {
+		background: rgba(0,0,0,.5);
+		border-bottom-color: transparent;
+	}
+	.primary-nav li.parent > a:after {
+		content: "▼";
+		color: rgba(255,255,255,.5);
+		float: right;
+	}
+	.primary-nav li.parent > a:hover {
+		background: rgba(0,0,0,.75);
+	}
+	.primary-nav li ul {
+		display: none;
+		background: rgba(0,0,0,.5);
+		border-top: 0 none;
+		padding: 0;
+	}
+	.primary-nav li ul a {
+		border: 0 none;
+		font-size: 12px;
+		padding: 10px 5%;
+		font-weight: normal;
+	}
+	.primary-nav li:hover ul {
+		display: block;
+		border-top: 0 none;
+	}
+
+} /* End Mobile Styles */
